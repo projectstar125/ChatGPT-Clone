@@ -1,0 +1,40 @@
+{
+  "name": "multi-user-ai-chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "@prisma/client": "^6.19.0",
+    "bcryptjs": "^3.0.2",
+    "highlight.js": "^11.11.1",
+    "isomorphic-dompurify": "^2.26.0",
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.7",
+    "next": "^15.5.9",
+    "openai": "^5.20.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.5.9",
+    "prisma": "^6.19.0",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.7.2"
+  }
+}
